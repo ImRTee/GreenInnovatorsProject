@@ -67,7 +67,20 @@ export class LinkService {
     }
     return filteredLinksArr;
   }
-
-
-
+  getLinkByHeading(heading: string) {
+    const link = this.links.find(
+      (l) => {
+        return l.heading === heading;
+      }
+    );
+    return link;
+  }
+  getLinksByCategory(category: string) {
+    const resultArray = this.links.filter (link => {
+        return link['category'] === category;
+      }
+    )
+    console.log(resultArray);
+    return resultArray;
+  }
 }

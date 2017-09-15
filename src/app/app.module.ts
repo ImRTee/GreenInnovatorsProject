@@ -3,27 +3,25 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { CategoryBarComponent } from './header/category-bar/category-bar.component';
-import { SideBarComponent } from './main/info/side-bar/side-bar.component';
-import {ContentComponent} from './main/info/content/content.component';
-import { MainComponent } from './main/main.component';
-import { HomeComponent } from './main/home/home.component';
-import { InfoComponent } from './main/info/info.component';
+import { HomeComponent } from './home/home.component';
+
 import {AppRoutingModule} from "./app-routing.module";
 import { FooterComponent } from './footer/footer.component';
 import {LinkService} from "./link.service";
-
+import { LinkItemComponent } from './home/link-item/link-item.component';
+import { LinkDetailComponent } from './home/link-detail/link-detail.component';
+import { LinkGroupComponent } from './link-group/link-group.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
     CategoryBarComponent,
-    SideBarComponent,
-    ContentComponent,
-    MainComponent,
     HomeComponent,
-    InfoComponent,
-    FooterComponent
+    FooterComponent,
+    LinkItemComponent,
+    LinkDetailComponent,
+    LinkGroupComponent
   ],
   imports: [
     BrowserModule,

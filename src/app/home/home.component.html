@@ -1,0 +1,46 @@
+<div class="container-fluid">
+  <div class ="category-feature-container row">
+
+    <div class="category-feature col-md-3">
+      <a routerLink="link-group/Weather">
+        <h3 class="cate-name">
+          Weather
+        </h3>
+      </a>
+      <app-link-item *ngFor="let linkEl of weatherList" [link]="linkEl"></app-link-item>
+
+
+    </div>
+
+
+    <div class="category-feature col-md-3">
+      <a routerLink="link-group/Finance">
+        <h3 class="cate-name">
+          Finances
+        </h3>
+      </a>
+
+      <app-link-item *ngFor="let linkEl of financeList" [link]="linkEl"></app-link-item>
+
+    </div>
+
+
+    <div class="category-feature col-md-3">
+      <a routerLink="link-group/Knowledge">
+        <h3 class="cate-name">
+          Knowledge
+        </h3>
+      </a>
+
+      <app-link-item *ngFor="let linkEl of knowledgeList" [link]="linkEl"></app-link-item>
+    </div>
+
+    <div class="category-feature col-md-3">
+      <a routerLink="link-group/ExpertContact">
+        <h3 class="cate-name">
+          Expert Contacts
+        </h3>
+      </a>
+
+      <app-link-item *ngFor="let linkEl of expertList" [link]="linkEl"></app-link-item>
+</div>
