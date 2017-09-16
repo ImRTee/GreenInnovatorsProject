@@ -1,0 +1,10 @@
+<div class="container-fluid link-group-container">
+  <div class="link-group-title">
+    <h1 >Feature links of {{links[0].category}}</h1>
+  </div>
+
+  <div class="row">
+    <app-link-item *ngFor="let linkEl of links" [link]="linkEl" class="col-sm-6 col-md-4 col-lg-3"></app-link-item>
+  </div>
+</div>
+
