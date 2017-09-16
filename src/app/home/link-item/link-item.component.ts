@@ -11,6 +11,15 @@ export class LinkItemComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+     // this.link['desc'] = this.descriptionCutter(this.link['desc']);
+    this.descriptionCutter('dsafjdkafajdbfadsjfbakj');
   }
+  descriptionCutter(desc: string) {
+    const descPieces = desc.split('');
+    console.log(descPieces);
+    if ( descPieces.length > 10 ) {
+      const redandunt = desc.substring(11);
 
+    }
+  }
 }
