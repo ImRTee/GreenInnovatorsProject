@@ -1,0 +1,18 @@
+.nav-bar{
+  display: flex;
+  list-style: none;
+  justify-content: space-around;
+  padding: 0;
+  background-color: green;
+}
+.nav-item{
+  cursor: pointer;
+  text-align: center;
+  width: 100%;
+  font-size: 1.2em;
+  outline: none;
+  padding:10px;
+}
+.nav-item:hover{
+  background-color: darkgreen;
+}
